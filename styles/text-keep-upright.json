@@ -1,0 +1,69 @@
+{
+  "version": 8,
+  "sources": {
+    "test1": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [10, -10],
+                [-10, -10]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "test2": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [10, 10],
+                [-10, 10]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1",
+      "type": "symbol",
+      "source": "test1",
+      "layout": {
+        "symbol-placement": "line",
+        "text-rotation-alignment": "map",
+        "text-field": "test",
+        "text-font": ["Roboto Regular"],
+        "text-keep-upright": false
+      }
+    },
+    {
+      "id": "test2",
+      "type": "symbol",
+      "source": "test2",
+      "layout": {
+        "symbol-placement": "line",
+        "text-rotation-alignment": "map",
+        "text-field": "test",
+        "text-font": ["Roboto Regular"],
+        "text-keep-upright": true
+      }
+    }
+  ]
+}

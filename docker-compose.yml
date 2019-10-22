@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+  dev:
+    image: node:alpine
+    volumes:
+      - ./:/code:delegated
+    working_dir: /code
+    ports:
+      - "5009:5009"
+      - "5010:5010"
+    command: npm run dev

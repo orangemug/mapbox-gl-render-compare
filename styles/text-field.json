@@ -1,0 +1,36 @@
+{
+  "version": 8,
+  "sources": {
+    "test": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, -10]
+            },
+            "properties": {
+              "name": "Hello world"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1",
+      "type": "symbol",
+      "source": "test",
+      "layout": {
+        "text-field": ">> {name} <<",
+        "text-font": ["Roboto Regular"]
+      }
+    }
+  ]
+}

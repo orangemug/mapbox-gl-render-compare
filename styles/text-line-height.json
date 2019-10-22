@@ -1,0 +1,84 @@
+{
+  "version": 8,
+  "sources": {
+    "test1": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, 40]
+            }
+          }
+        ]
+      }
+    },
+    "test2": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, 0]
+            }
+          }
+        ]
+      }
+    },
+    "test3": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, -40]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1",
+      "type": "symbol",
+      "source": "test1",
+      "layout": {
+        "text-field": "testing, testing\n1, 2, 3",
+        "text-font": ["Roboto Regular"],
+        "text-line-height": 1
+      }
+    },
+    {
+      "id": "test2",
+      "type": "symbol",
+      "source": "test2",
+      "layout": {
+        "text-field": "testing, testing\n1, 2, 3",
+        "text-font": ["Roboto Regular"],
+        "text-line-height": 1.5
+      }
+    },
+    {
+      "id": "test3",
+      "type": "symbol",
+      "source": "test3",
+      "layout": {
+        "text-field": "testing, testing\n1, 2, 3",
+        "text-font": ["Roboto Regular"],
+        "text-line-height": 2
+      }
+    }
+  ]
+}

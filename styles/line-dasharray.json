@@ -1,0 +1,150 @@
+{
+  "version": 8,
+  "zoom": 2,
+  "sources": {
+    "test1": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-50, -20],
+                [50, -20]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "test2": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-50, -10],
+                [50, -10]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "test3": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-50, 0],
+                [50, 0]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "test4": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-50, 10],
+                [50, 10]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "test5": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-50, 20],
+                [50, 20]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "subject5",
+      "type": "line",
+      "source": "test5",
+      "paint": {
+        "line-width": 0.5,
+        "line-dasharray": [4, 6],
+        "line-color": "red"
+      }
+    },
+    {
+      "id": "subject4",
+      "type": "line",
+      "source": "test4",
+      "paint": {
+        "line-width": 1,
+        "line-dasharray": [4, 6],
+        "line-color": "red"
+      }
+    },
+    {
+      "id": "subject3",
+      "type": "line",
+      "source": "test3",
+      "paint": {
+        "line-width": 5,
+        "line-dasharray": [4, 6],
+        "line-color": "red"
+      }
+    },
+    {
+      "id": "subject2",
+      "type": "line",
+      "source": "test2",
+      "paint": {
+        "line-width": 10,
+        "line-dasharray": [4, 6],
+        "line-color": "red"
+      }
+    },
+    {
+      "id": "subject1",
+      "type": "line",
+      "source": "test1",
+      "paint": {
+        "line-width": 15,
+        "line-dasharray": [4, 6],
+        "line-color": "red"
+      }
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "version": 8,
+  "sources": {
+    "test1": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, -20]
+            }
+          }
+        ]
+      }
+    },
+    "test2": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [3, -17]
+            }
+          }
+        ]
+      }
+    },
+    "test3": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, 20]
+            }
+          }
+        ]
+      }
+    },
+    "test4": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [3, 17]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1",
+      "type": "symbol",
+      "source": "test1",
+      "layout": {
+        "icon-image": "airport_15"
+      }
+    },
+    {
+      "id": "test2",
+      "type": "symbol",
+      "source": "test2",
+      "layout": {
+        "icon-image": "airport_15"
+      }
+    },
+    {
+      "id": "test3",
+      "type": "symbol",
+      "source": "test3",
+      "layout": {
+        "icon-image": "airport_15",
+        "icon-allow-overlap": true
+      }
+    },
+    {
+      "id": "test4",
+      "type": "symbol",
+      "source": "test4",
+      "layout": {
+        "icon-image": "airport_15",
+        "icon-allow-overlap": true
+      }
+    }
+  ]
+}

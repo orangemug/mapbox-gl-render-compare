@@ -1,0 +1,106 @@
+{
+  "version": 8,
+  "zoom": 2.81,
+  "center": [14.63, 68.88],
+  "rotate": 0,
+  "pitch": 60,
+  "sources": {
+    "test1": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [30, 10],
+                [50, 10],
+                [50, 30],
+                [30, 30]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "test2": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [60, 10],
+                [80, 10],
+                [80, 30],
+                [60, 30]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "test3": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [90, 10],
+                [110, 10],
+                [110, 30],
+                [90, 30]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "subject1",
+      "type": "line",
+      "source": "test1",
+      "layout": {
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-width": 20
+      }
+    },
+    {
+      "id": "subject2",
+      "type": "line",
+      "source": "test2",
+      "layout": {
+        "line-join": "round"
+      },
+      "paint": {
+        "line-width": 20
+      }
+    },
+    {
+      "id": "subject3",
+      "type": "line",
+      "source": "test3",
+      "layout": {
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-width": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "version": 8,
+  "zoom": 2.81,
+  "center": [14.63, 68.88],
+  "rotate": 0,
+  "pitch": 60,
+  "sources": {
+    "test1": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    60,
+                    10
+                  ],
+                  [
+                    80,
+                    10
+                  ],
+                  [
+                    80,
+                    30
+                  ],
+                  [
+                    60,
+                    30
+                  ],
+                  [
+                    60,
+                    10
+                  ]
+                ]
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      }
+    },
+    "test2": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    30,
+                    10
+                  ],
+                  [
+                    50,
+                    10
+                  ],
+                  [
+                    50,
+                    30
+                  ],
+                  [
+                    30,
+                    30
+                  ],
+                  [
+                    30,
+                    10
+                  ]
+                ]
+              ]
+            },
+            "properties": {}
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1",
+      "type": "fill",
+      "source": "test1",
+      "paint": {
+        "fill-color": "red"
+      }
+    },
+    {
+      "id": "test2",
+      "type": "fill",
+      "source": "test2",
+      "paint": {
+        "fill-color": "red"
+      }
+    },
+    {
+      "id": "subject1",
+      "type": "fill",
+      "source": "test1",
+      "paint": {
+        "fill-color": "blue",
+        "fill-translate": [10, 10],
+        "fill-translate-anchor": "viewport"
+      }
+    },
+    {
+      "id": "subject2",
+      "type": "fill",
+      "source": "test2",
+      "paint": {
+        "fill-color": "blue",
+        "fill-translate": [10, 10],
+        "fill-translate-anchor": "map"
+      }
+    }
+  ]
+}
+

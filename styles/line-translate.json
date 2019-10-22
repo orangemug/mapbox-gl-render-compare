@@ -1,0 +1,52 @@
+{
+  "version": 8,
+  "zoom": 2.81,
+  "center": [14.63, 68.88],
+  "rotate": 0,
+  "pitch": 60,
+  "sources": {
+    "test": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [60, 10],
+                [80, 10],
+                [80, 30],
+                [60, 30]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "subject",
+      "type": "line",
+      "source": "test",
+      "paint": {
+        "line-width": 20,
+        "line-color": "blue"
+      }
+    },
+    {
+      "id": "test",
+      "type": "line",
+      "source": "test",
+      "paint": {
+        "line-width": 20,
+        "line-color": "red",
+        "line-translate": [10, 10]
+      }
+    }
+  ]
+}

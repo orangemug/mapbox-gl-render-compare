@@ -1,0 +1,29 @@
+{
+  "version": 8,
+  "zoom": 2.81,
+  "center": [14.63, 68.88],
+  "rotate": 0,
+  "pitch": 60,
+  "sources": {
+    "natural_earth_shaded_relief": {
+      "maxzoom": 6,
+      "tileSize": 256,
+      "tiles": [
+        "https://klokantech.github.io/naturalearthtiles/tiles/natural_earth_2_shaded_relief.raster/{z}/{x}/{y}.png"
+      ],
+      "type": "raster"
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "subject",
+      "type": "raster",
+      "source": "natural_earth_shaded_relief",
+      "paint": {
+        "raster-brightness-min": 0.5
+      }
+    }
+  ]
+}

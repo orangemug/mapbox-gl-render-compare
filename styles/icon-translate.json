@@ -1,0 +1,87 @@
+{
+  "version": 8,
+  "sources": {
+    "test1": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, -20]
+            }
+          }
+        ]
+      }
+    },
+    "test2": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, 0]
+            }
+          }
+        ]
+      }
+    },
+    "test3": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, 20]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1",
+      "type": "symbol",
+      "source": "test1",
+      "layout": {
+        "icon-image": "airport_11"
+      },
+      "paint": {
+        "icon-translate": [10, 10]
+      }
+    },
+    {
+      "id": "test2",
+      "type": "symbol",
+      "source": "test2",
+      "layout": {
+        "icon-image": "airport_11"
+      },
+      "paint": {
+        "icon-translate": [20, 10]
+      }
+    },
+    {
+      "id": "test3",
+      "type": "symbol",
+      "source": "test3",
+      "layout": {
+        "icon-image": "airport_11"
+      },
+      "paint": {
+        "icon-translate": [30, 10]
+      }
+    }
+  ]
+}

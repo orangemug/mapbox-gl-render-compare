@@ -1,0 +1,512 @@
+[
+  {
+    "name": "background-pattern",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_background-pattern.json"
+  },
+  {
+    "name": "circle-blur",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_circle-blur.json"
+  },
+  {
+    "name": "circle-color",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_circle-color.json"
+  },
+  {
+    "name": "circle-opacity",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_circle-opacity.json"
+  },
+  {
+    "name": "circle-pitch-alignment",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_circle-pitch-alignment.json"
+  },
+  {
+    "name": "circle-pitch-scale",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_circle-pitch-scale.json"
+  },
+  {
+    "name": "circle-radius",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_circle-radius.json"
+  },
+  {
+    "name": "circle-sort-key",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_circle-sort-key.json"
+  },
+  {
+    "name": "circle-stroke-color",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_circle-stroke-color.json"
+  },
+  {
+    "name": "circle-stroke-opacity",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_circle-stroke-opacity.json"
+  },
+  {
+    "name": "circle-stroke-width",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_circle-stroke-width.json"
+  },
+  {
+    "name": "circle-translate-anchor",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_circle-translate-anchor.json"
+  },
+  {
+    "name": "circle-translate",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_circle-translate.json"
+  },
+  {
+    "name": "fill-antialias",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_fill-antialias.json"
+  },
+  {
+    "name": "fill-pattern",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_fill-pattern.json"
+  },
+  {
+    "name": "fill-sort-key",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_fill-sort-key.json"
+  },
+  {
+    "name": "icon-allow-overlap",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-allow-overlap.json"
+  },
+  {
+    "name": "icon-anchor",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-anchor.json"
+  },
+  {
+    "name": "icon-color",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-color.json"
+  },
+  {
+    "name": "icon-halo-blur",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-halo-blur.json"
+  },
+  {
+    "name": "icon-halo-color",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-halo-color.json"
+  },
+  {
+    "name": "icon-halo-width",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-halo-width.json"
+  },
+  {
+    "name": "icon-ignore-placement",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-ignore-placement.json"
+  },
+  {
+    "name": "icon-image",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-image.json"
+  },
+  {
+    "name": "icon-keep-upright",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-keep-upright.json"
+  },
+  {
+    "name": "icon-offset",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-offset.json"
+  },
+  {
+    "name": "icon-opacity",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-opacity.json"
+  },
+  {
+    "name": "icon-optional",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-optional.json"
+  },
+  {
+    "name": "icon-padding",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-padding.json"
+  },
+  {
+    "name": "icon-pitch-alignment",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-pitch-alignment.json"
+  },
+  {
+    "name": "icon-rotate",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-rotate.json"
+  },
+  {
+    "name": "icon-rotation-alignment",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-rotation-alignment.json"
+  },
+  {
+    "name": "icon-size",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-size.json"
+  },
+  {
+    "name": "icon-text-fit-padding",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-text-fit-padding.json"
+  },
+  {
+    "name": "icon-text-fit",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-text-fit.json"
+  },
+  {
+    "name": "icon-translate",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_icon-translate.json"
+  },
+  {
+    "name": "line-blur",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_line-blur.json"
+  },
+  {
+    "name": "line-dasharray",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_line-dasharray.json"
+  },
+  {
+    "name": "line-gap-width",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_line-gap-width.json"
+  },
+  {
+    "name": "line-gradient",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_line-gradient.json"
+  },
+  {
+    "name": "line-miter-limit",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_line-miter-limit.json"
+  },
+  {
+    "name": "line-offset",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_line-offset.json"
+  },
+  {
+    "name": "line-pattern",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_line-pattern.json"
+  },
+  {
+    "name": "line-round-limit",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_line-round-limit.json"
+  },
+  {
+    "name": "line-sort-key",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_line-sort-key.json"
+  },
+  {
+    "name": "line-translate-anchor",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_line-translate-anchor.json"
+  },
+  {
+    "name": "line-width",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_line-width.json"
+  },
+  {
+    "name": "raster-brightness-max",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_raster-brightness-max.json"
+  },
+  {
+    "name": "raster-brightness-min",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_raster-brightness-min.json"
+  },
+  {
+    "name": "raster-contrast",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_raster-contrast.json"
+  },
+  {
+    "name": "raster-fade-duration",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_raster-fade-duration.json"
+  },
+  {
+    "name": "raster-hue-rotate",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_raster-hue-rotate.json"
+  },
+  {
+    "name": "raster-opacity",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_raster-opacity.json"
+  },
+  {
+    "name": "raster-resampling",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_raster-resampling.json"
+  },
+  {
+    "name": "raster-saturation",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_raster-saturation.json"
+  },
+  {
+    "name": "symbol-avoid-edges",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_symbol-avoid-edges.json"
+  },
+  {
+    "name": "symbol-placement",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_symbol-placement.json"
+  },
+  {
+    "name": "symbol-sort-key",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_symbol-sort-key.json"
+  },
+  {
+    "name": "symbol-spacing",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_symbol-spacing.json"
+  },
+  {
+    "name": "symbol-z-order",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_symbol-z-order.json"
+  },
+  {
+    "name": "text-allow-overlap",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-allow-overlap.json"
+  },
+  {
+    "name": "text-anchor",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-anchor.json"
+  },
+  {
+    "name": "text-color",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-color.json"
+  },
+  {
+    "name": "text-field",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-field.json"
+  },
+  {
+    "name": "text-font",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-font.json"
+  },
+  {
+    "name": "text-halo-blur",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-halo-blur.json"
+  },
+  {
+    "name": "text-halo-color",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-halo-color.json"
+  },
+  {
+    "name": "text-halo-width",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-halo-width.json"
+  },
+  {
+    "name": "text-ignore-placement",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-ignore-placement.json"
+  },
+  {
+    "name": "text-justify",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-justify.json"
+  },
+  {
+    "name": "text-keep-upright",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-keep-upright.json"
+  },
+  {
+    "name": "text-letter-spacing",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-letter-spacing.json"
+  },
+  {
+    "name": "text-line-height",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-line-height.json"
+  },
+  {
+    "name": "text-max-angle",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-max-angle.json"
+  },
+  {
+    "name": "text-max-width",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-max-width.json"
+  },
+  {
+    "name": "text-offset",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-offset.json"
+  },
+  {
+    "name": "text-opacity",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-opacity.json"
+  },
+  {
+    "name": "text-optional",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-optional.json"
+  },
+  {
+    "name": "text-padding",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-padding.json"
+  },
+  {
+    "name": "text-pitch-alignment",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-pitch-alignment.json"
+  },
+  {
+    "name": "text-radial-offset",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-radial-offset.json"
+  },
+  {
+    "name": "text-rotate",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-rotate.json"
+  },
+  {
+    "name": "text-rotation-alignment",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-rotation-alignment.json"
+  },
+  {
+    "name": "text-size",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-size.json"
+  },
+  {
+    "name": "text-transform",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-transform.json"
+  },
+  {
+    "name": "text-translate-anchor",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-translate-anchor.json"
+  },
+  {
+    "name": "text-translate",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-translate.json"
+  },
+  {
+    "name": "text-variable-anchor",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-variable-anchor.json"
+  },
+  {
+    "name": "text-writing-mode",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_text-writing-mode.json"
+  },
+  {
+    "name": "translate-anchor",
+    "disabled": true,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/_translate-anchor.json"
+  },
+  {
+    "name": "background-color",
+    "disabled": false,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/background-color.json"
+  },
+  {
+    "name": "background-opacity",
+    "disabled": false,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/background-opacity.json"
+  },
+  {
+    "name": "fill-color",
+    "disabled": false,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/fill-color.json"
+  },
+  {
+    "name": "fill-opacity",
+    "disabled": false,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/fill-opacity.json"
+  },
+  {
+    "name": "fill-outline-color",
+    "disabled": false,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/fill-outline-color.json"
+  },
+  {
+    "name": "fill-translate-anchor",
+    "disabled": false,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/fill-translate-anchor.json"
+  },
+  {
+    "name": "fill-translate",
+    "disabled": false,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/fill-translate.json"
+  },
+  {
+    "name": "line-cap",
+    "disabled": false,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/line-cap.json"
+  },
+  {
+    "name": "line-color",
+    "disabled": false,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/line-color.json"
+  },
+  {
+    "name": "line-join",
+    "disabled": false,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/line-join.json"
+  },
+  {
+    "name": "line-opacity",
+    "disabled": false,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/line-opacity.json"
+  },
+  {
+    "name": "line-translate",
+    "disabled": false,
+    "filepath": "/Users/orangemug/dev/projects/maputnik/all-styles/styles/line-translate.json"
+  }
+]

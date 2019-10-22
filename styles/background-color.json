@@ -1,0 +1,15 @@
+{
+  "version": 8,
+  "sources": {},
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test",
+      "type": "background",
+      "paint": {
+        "background-color": "red"
+      }
+    }
+  ]
+}

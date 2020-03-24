@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'docs'),
-    publicPath: '/all-styles/',
+    publicPath: '/mapbox-gl-render-compare/',
   },
   plugins: [
     new CopyPlugin([
@@ -23,7 +23,7 @@ module.exports = {
     // }),
   ],
   devServer: {
-    publicPath: '/all-styles/',
+    publicPath: '/mapbox-gl-render-compare/',
     port: 5009,
     host: '0.0.0.0',
   },

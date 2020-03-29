@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: inherit;
+}
+
 .Home {
   padding: 0.8em;
 }

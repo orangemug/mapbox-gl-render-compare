@@ -30,16 +30,6 @@ function clone (obj) {
 }
 
 
-/**
- * TODO
- *
- *  - [x] Get list of files
- *  - Load in ol/mapbox-gl-js
- *  - Add intersection-observor to lazy load
- *  - Sync pan/zoom/pitch
- */
-
-
 const styles = Object.keys(modules).map(path => {
   return {
     id: path.replace(/^\.\/|\.json$/g, ""),
@@ -224,9 +214,9 @@ class Home extends Component {
       <div className="Home">
         <header>
           <div className="content">
-            <h1>Renderer bot</h1>
+            <h1>mapbox-gl-render-compare</h1>
             <p>
-              Show the ways in which ol-mapbox-style rendering differs from mapbox-gl-js. Even though ol-mapbox-style supports a subset of the mapbox-gl spec, what it does support also differ in someways. Use this tool to explore the differences between the renderers.
+              Show the ways in which <a href="https://www.npmjs.com/package/ol-mapbox-style">ol-mapbox-style</a> rendering differs from <a href="https://www.npmjs.com/package/mapbox-gl">mapbox-gl</a>. Because <a href="https://www.npmjs.com/package/ol-mapbox-style">ol-mapbox-style</a> only supports a subset of the spec, use this tool to find out what is supported and find out how it differs.
             </p>
           </div>
         </header>

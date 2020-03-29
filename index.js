@@ -58,7 +58,7 @@ class OpenLayersMapIframe extends Component {
 
   showMap () {
     const loc = window.location;
-    const olUrl = `${loc.origin}${loc.pathname}#/ol/?style=${encodeURI(JSON.stringify(this.props.style))}`;
+    const olUrl = `${loc.origin}${loc.pathname}#/ol/?style=${this.props.style}`;
     this.setState({
       url: olUrl,
     });
@@ -233,7 +233,7 @@ class Home extends Component {
                       <div
                         className="style__renderer style__renderer--ol"
                       >
-                        <OpenLayersMapIframe {...style} style={style.style} />
+                        <OpenLayersMapIframe {...style} style={style.id} />
                       </div>
                       <div
                         className="style__renderer style__renderer--mgl"
@@ -274,20 +274,12 @@ class Home extends Component {
 class Ol extends Component {
   render () {
     const url = new URL(`http://example.com/${this.props.url}`);
-    const styleRaw = url.searchParams.get("style");
-    let style;
-    try {
-      style = JSON.parse(styleRaw);
-    }
-    catch (err) {
-      console.error(err);
-    }
-
-    console.log(style)
+    const styleId = url.searchParams.get("style");
+    let styleObj = styles.find(s => s.id === styleId) || {};
 
     return (
       <div style={{height: "100vh", width: "100%", display: "flex"}}>
-        <OpenLayersMap style={style} />
+        <OpenLayersMap style={styleObj.style} />
       </div>
     );
   }

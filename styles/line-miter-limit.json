@@ -72,7 +72,8 @@
       "type": "line",
       "source": "test1",
       "layout": {
-        "line-join": "bevel"
+        "line-join": "miter",
+        "line-miter-limit": 0.5
       },
       "paint": {
         "line-width": 20
@@ -83,7 +84,8 @@
       "type": "line",
       "source": "test2",
       "layout": {
-        "line-join": "round"
+        "line-join": "miter",
+        "line-miter-limit": 1
       },
       "paint": {
         "line-width": 20
@@ -94,7 +96,8 @@
       "type": "line",
       "source": "test3",
       "layout": {
-        "line-join": "miter"
+        "line-join": "miter",
+        "line-miter-limit": 2
       },
       "paint": {
         "line-width": 20

@@ -1,0 +1,125 @@
+{
+  "version": 8,
+  "sources": {
+    "test1": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-20, 10]
+            },
+            "properties": {
+              "name": "Hello world"
+            }
+          }
+        ]
+      }
+    },
+    "test2": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-20, -10]
+            },
+            "properties": {
+              "name": "Hello world"
+            }
+          }
+        ]
+      }
+    },
+    "test3": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [20, 10]
+            },
+            "properties": {
+              "name": "新年"
+            }
+          }
+        ]
+      }
+    },
+    "test4": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [20, -10]
+            },
+            "properties": {
+              "name": "新年"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1",
+      "type": "symbol",
+      "source": "test1",
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Roboto Regular"],
+        "symbol-placement": "point",
+        "text-writing-mode": ["horizontal"]
+      }
+    },
+    {
+      "id": "test2",
+      "type": "symbol",
+      "source": "test2",
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Roboto Regular"],
+        "symbol-placement": "point",
+        "text-writing-mode": ["vertical"]
+      }
+    },
+    {
+      "id": "test3",
+      "type": "symbol",
+      "source": "test3",
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Roboto Regular"],
+        "symbol-placement": "point",
+        "text-writing-mode": ["horizontal"]
+      }
+    },
+    {
+      "id": "test4",
+      "type": "symbol",
+      "source": "test4",
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Roboto Regular"],
+        "symbol-placement": "point",
+        "text-writing-mode": ["vertical"]
+      }
+    }
+  ]
+}

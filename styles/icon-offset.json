@@ -1,7 +1,5 @@
 {
   "version": 8,
-  "zoom": 1,
-  "center": [0, 0],
   "sources": {
     "test1": {
       "type": "geojson",
@@ -11,13 +9,8 @@
           {
             "type": "Feature",
             "geometry": {
-              "type": "LineString",
-              "coordinates": [
-                [-40, -10],
-                [-20, -10],
-                [-20, 10],
-                [-40, 10]
-              ]
+              "type": "Point",
+              "coordinates": [0, -20]
             }
           }
         ]
@@ -31,13 +24,8 @@
           {
             "type": "Feature",
             "geometry": {
-              "type": "LineString",
-              "coordinates": [
-                [-10, -10],
-                [10, -10],
-                [10, 10],
-                [-10, 10]
-              ]
+              "type": "Point",
+              "coordinates": [0, 0]
             }
           }
         ]
@@ -51,53 +39,42 @@
           {
             "type": "Feature",
             "geometry": {
-              "type": "LineString",
-              "coordinates": [
-                [20, -10],
-                [40, -10],
-                [40, 10],
-                [20, 10]
-              ]
+              "type": "Point",
+              "coordinates": [0, 20]
             }
           }
         ]
       }
     }
   },
-  "sprite": "",
+  "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
-      "id": "subject1",
-      "type": "line",
+      "id": "test1",
+      "type": "symbol",
       "source": "test1",
       "layout": {
-        "line-join": "bevel"
-      },
-      "paint": {
-        "line-width": 20
+        "icon-image": "airport_11",
+        "icon-offset": [10, 10]
       }
     },
     {
-      "id": "subject2",
-      "type": "line",
+      "id": "test2",
+      "type": "symbol",
       "source": "test2",
       "layout": {
-        "line-join": "round"
-      },
-      "paint": {
-        "line-width": 20
+        "icon-image": "airport_11",
+        "icon-offset": [20, 10]
       }
     },
     {
-      "id": "subject3",
-      "type": "line",
+      "id": "test3",
+      "type": "symbol",
       "source": "test3",
       "layout": {
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-width": 20
+        "icon-image": "airport_11",
+        "icon-offset": [30, 10]
       }
     }
   ]

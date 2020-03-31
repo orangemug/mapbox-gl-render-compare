@@ -1,0 +1,51 @@
+{
+  "version": 8,
+  "bearing": 180,
+  "sources": {
+    "test": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, 0]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1",
+      "type": "symbol",
+      "source": "test",
+      "layout": {
+        "text-field": "test",
+        "text-font": ["Roboto Regular"]
+      },
+      "paint": {
+        "text-translate-anchor": "map",
+        "text-translate": [10, 10]
+      }
+    },
+    {
+      "id": "test2",
+      "type": "symbol",
+      "source": "test",
+      "layout": {
+        "text-field": "test",
+        "text-font": ["Roboto Regular"]
+      },
+      "paint": {
+        "text-translate-anchor": "viewport",
+        "text-translate": [10, 10]
+      }
+    }
+  ]
+}

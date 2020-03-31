@@ -1,9 +1,7 @@
 {
   "version": 8,
-  "zoom": 2.81,
-  "center": [14.63, 68.88],
-  "rotate": 0,
-  "pitch": 60,
+  "zoom": 1,
+  "center": [0, 0],
   "sources": {
     "test1": {
       "type": "geojson",

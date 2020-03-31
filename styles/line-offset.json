@@ -28,22 +28,22 @@
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
+      "id": "original",
+      "type": "line",
+      "source": "test",
+      "paint": {
+        "line-width": 20,
+        "line-color": "red"
+      }
+    },
+    {
       "id": "subject",
       "type": "line",
       "source": "test",
       "paint": {
         "line-width": 20,
-        "line-color": "blue"
-      }
-    },
-    {
-      "id": "test",
-      "type": "line",
-      "source": "test",
-      "paint": {
-        "line-width": 20,
-        "line-color": "red",
-        "line-translate": [10, 10]
+        "line-color": "blue",
+        "line-offset": 30
       }
     }
   ]

@@ -118,8 +118,9 @@ class OpenLayersMap extends Component {
     this._map = new OlMap({
       target: this._innerEl,
       view: new OlView({
-        zoom: 2,
-        center: [0, 0],
+        zoom: this.props.style.hasOwnProperty("zoom") ? this.props.style.zoom+1 : 2,
+        rotation: this.props.style.hasOwnProperty("bearing") ? this.props.style.bearing*(Math.PI/180) : 0,
+        center: this.props.style.hasOwnProperty("center") ? this.props.style.center : [0, 0],
       })
     });
     olms(this._map, clone(style));
@@ -172,8 +173,9 @@ class Map extends Component {
       this._map = new mapboxgl.Map({
         container: this._el, // container id
         style: this.props.style,
-        zoom: 1,
-        center: [0, 0],
+        zoom: this.props.style.hasOwnProperty("zoom") ? this.props.style.zoom : 1,
+        bearing: this.props.style.hasOwnProperty("bearing") ? this.props.style.bearing : 0,
+        center: this.props.style.hasOwnProperty("center") ? this.props.style.center : [0, 0],
       });
       this._map.addControl(new mapboxgl.NavigationControl());
       window.map = this._map;

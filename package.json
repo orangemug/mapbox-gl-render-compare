@@ -14,6 +14,7 @@
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
+    "@mapbox/mapbox-gl-style-spec": "^13.13.0",
     "babel-loader": "^8.0.6",
     "classnames": "^2.2.6",
     "date-fns": "^1.30.1",

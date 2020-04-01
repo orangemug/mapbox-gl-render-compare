@@ -7,6 +7,13 @@ a {
   color: inherit;
 }
 
+p code,
+ul code {
+  background: #eee;
+  padding: 0 0.2em;
+  border-radius: 2px;
+}
+
 .Home {
   padding: 0.8em;
 }

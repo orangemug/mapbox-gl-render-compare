@@ -8,20 +8,48 @@ import classnames from 'classnames';
 import Portal from 'preact-portal';
 import { createHashHistory } from 'history';
 import mapboxgl from 'mapbox-gl';
+import {latest} from '@mapbox/mapbox-gl-style-spec';
 
 import 'ol/ol.css'
 import olms from 'ol-mapbox-style';
 import {Map as OlMap, View as OlView} from 'ol';
 
 
+const propertiesUnsorted = {};
+Object.keys(latest).forEach(key => {
+  if (key.match(/^(layout|paint)_(.*)$/)) {
+    const type = RegExp.$1;
+    Object.keys(latest[key]).forEach(id => {
+      propertiesUnsorted[`${type}-${id}`] = {
+        type,
+        id: id,
+      };
+    })
+  }
+});
+
+const properties = Object.values(propertiesUnsorted).sort((a, b) => {
+  if (a.id < b.id) {
+    return -1;
+  }
+  else if (a.id > b.id) {
+    return 1;
+  }
+  else {
+    return 0;
+  }
+});
+
+
 const modules = {};
 var paths = require.context('./styles', true, /.json$/);
 paths.keys().forEach(function(path) {
+  const rootPath = path.replace(/^\.\//, "./styles/");
   if (path.match(/\.\/_/)) {
-    modules[path] = undefined;
+    modules[rootPath] = undefined;
   }
   else {
-    modules[path] = paths(path);
+    modules[rootPath] = paths(path);
   }
 });
 
@@ -30,9 +58,11 @@ function clone (obj) {
 }
 
 
-const styles = Object.keys(modules).map(path => {
+const styles = properties.map(property => {
+  const path = `./styles/${property.id}.json`;
   return {
-    id: path.replace(/^\.\/|\.json$/g, ""),
+    id: property.id,
+    type: property.type,
     path: path,
     style: modules[path],
   }
@@ -220,6 +250,17 @@ class Home extends Component {
             <p>
               Show the ways in which <a href="https://www.npmjs.com/package/ol-mapbox-style">ol-mapbox-style</a> rendering differs from <a href="https://www.npmjs.com/package/mapbox-gl">mapbox-gl</a>. Because <a href="https://www.npmjs.com/package/ol-mapbox-style">ol-mapbox-style</a> only supports a subset of the spec, use this tool to find out what is supported and find out how it differs.
             </p>
+            <p>
+              We are currently testing for <code>layout</code> and <code>paint</code> properties from the style spec as an initial aim. On from that we'll be testing for
+            </p>
+            <ul>
+              <li><code>source</code> - we currently test <code>geojson</code>/<code>raster</code> as a part of the <code>layout</code>/<code>paint</code> tests, although <code>vector</code> also appears to work in place of geojson.</li>
+              <li><code>filter</code></li>
+              <li><code>function</code></li>
+              <li><code>expression</code></li>
+              <li><code>light</code></li>
+              <li><code>transition</code></li>
+            </ul>
           </div>
         </header>
         <div>
@@ -229,7 +270,7 @@ class Home extends Component {
                 return (
                   <div key={idx}>
                     <h2>
-                      <code>{style.id}</code>
+                      <code>{style.path}</code>
                     </h2>
                     <div className="style">
                       <div

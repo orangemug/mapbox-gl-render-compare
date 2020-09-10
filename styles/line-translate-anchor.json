@@ -1,5 +1,10 @@
 {
   "version": 8,
+  "metadata": {
+    "ol": {
+      "supported": false
+    }
+  },
   "rotate": 90,
   "pitch": 60,
   "sources": {

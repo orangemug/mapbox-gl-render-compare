@@ -1,5 +1,10 @@
 {
   "version": 8,
+  "metadata": {
+    "ol": {
+      "supported": false
+    }
+  },
   "sources": {},
   "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",

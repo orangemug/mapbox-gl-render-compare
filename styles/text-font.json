@@ -1,5 +1,11 @@
 {
   "version": 8,
+  "metadata": {
+    "ol": {
+      "supported": true,
+      "notes": "However not via glyphs"
+    }
+  },
   "sources": {
     "test1": {
       "type": "geojson",

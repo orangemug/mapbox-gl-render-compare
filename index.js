@@ -2,6 +2,7 @@
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './index.css';
 
+import {get} from 'lodash';
 import {h, Component, render} from 'preact';
 import { Router, route, Link} from 'preact-router';
 import classnames from 'classnames';
@@ -255,9 +256,6 @@ class Home extends Component {
             </p>
             <ul>
               <li><code>source</code> - we currently test <code>geojson</code>/<code>raster</code> as a part of the <code>layout</code>/<code>paint</code> tests, although <code>vector</code> also appears to work in place of <code>geojson</code>.</li>
-              <li><code>filter</code></li>
-              <li><code>function</code></li>
-              <li><code>expression</code></li>
               <li><code>light</code></li>
               <li><code>transition</code></li>
             </ul>
@@ -272,6 +270,9 @@ class Home extends Component {
                     <h2>
                       <code>{style.path}</code>
                     </h2>
+                    <p>
+                      Supported: {get(style.style, "metadata.ol.supported") ? "✅ yes" : "❌ no"}
+                    </p>
                     <div className="style">
                       <div
                         className="style__renderer style__renderer--ol"

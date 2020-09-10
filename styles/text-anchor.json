@@ -1,5 +1,10 @@
 {
   "version": 8,
+  "metadata": {
+    "ol": {
+      "supported": true
+    }
+  },
   "sources": {
     "center": {
       "type": "geojson",

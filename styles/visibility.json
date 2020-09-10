@@ -1,0 +1,65 @@
+{
+  "version": 8,
+  "sources": {
+    "test1": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, -10]
+            },
+            "properties": {}
+          }
+        ]
+      }
+    },
+    "test2": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, 10]
+            },
+            "properties": {}
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1",
+      "type": "circle",
+      "source": "test1",
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": 5,
+        "circle-color": "red"
+      }
+    },
+    {
+      "id": "test2",
+      "type": "circle",
+      "source": "test2",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "circle-radius": 5,
+        "circle-color": "red"
+      }
+    }
+  ]
+}

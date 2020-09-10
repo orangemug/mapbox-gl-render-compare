@@ -254,7 +254,7 @@ class Home extends Component {
               We are currently testing for <code>layout</code> and <code>paint</code> properties from the style spec as an initial aim. On from that we'll be testing for
             </p>
             <ul>
-              <li><code>source</code> - we currently test <code>geojson</code>/<code>raster</code> as a part of the <code>layout</code>/<code>paint</code> tests, although <code>vector</code> also appears to work in place of geojson.</li>
+              <li><code>source</code> - we currently test <code>geojson</code>/<code>raster</code> as a part of the <code>layout</code>/<code>paint</code> tests, although <code>vector</code> also appears to work in place of <code>geojson</code>.</li>
               <li><code>filter</code></li>
               <li><code>function</code></li>
               <li><code>expression</code></li>

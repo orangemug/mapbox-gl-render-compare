@@ -1,0 +1,131 @@
+{
+  "version": 8,
+  "zoom": 1,
+  "center": [0, 0],
+  "sources": {
+    "test1": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-40, -10],
+                [-20, -10],
+                [-20, 10],
+                [-40, 10]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "test2": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-10, -10],
+                [10, -10],
+                [10, 10],
+                [-10, 10]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "test3": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [20, -10],
+                [40, -10],
+                [40, 10],
+                [20, 10]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1_line",
+      "type": "line",
+      "source": "test1",
+      "paint": {
+        "line-width": 2,
+        "line-color": "red"
+      }
+    },
+    {
+      "id": "test1_symbol_point",
+      "type": "symbol",
+      "source": "test1",
+      "layout": {
+        "icon-image": "airport_11",
+        "symbol-placement": "point",
+        "text-field": "test",
+        "text-font": ["Roboto Regular"]
+      }
+    },
+    {
+      "id": "test2_line",
+      "type": "line",
+      "source": "test2",
+      "paint": {
+        "line-width": 2,
+        "line-color": "red"
+      }
+    },
+    {
+      "id": "test2_symbol_line",
+      "type": "symbol",
+      "source": "test2",
+      "layout": {
+        "icon-image": "airport_11",
+        "symbol-placement": "line",
+        "text-field": "test",
+        "text-font": ["Roboto Regular"]
+      }
+    },
+    {
+      "id": "test3_line",
+      "type": "line",
+      "source": "test3",
+      "paint": {
+        "line-width": 2,
+        "line-color": "red"
+      }
+    },
+    {
+      "id": "test3_symbol_line_center",
+      "type": "symbol",
+      "source": "test3",
+      "layout": {
+        "icon-image": "airport_11",
+        "symbol-placement": "line-center",
+        "text-field": "test",
+        "text-font": ["Roboto Regular"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "version": 8,
+  "zoom": 1,
+  "center": [0, 0],
+  "sources": {
+    "test1": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-30, -10],
+                [-10, -10],
+                [-10, 10],
+                [-30, 10]
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "test2": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [10, -10],
+                [30, -10],
+                [30, 10],
+                [10, 10]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1_line",
+      "type": "line",
+      "source": "test1",
+      "paint": {
+        "line-width": 2,
+        "line-color": "red"
+      }
+    },
+    {
+      "id": "test1_symbol_line_center",
+      "type": "symbol",
+      "source": "test1",
+      "layout": {
+        "symbol-placement": "line-center",
+        "text-field": "testingtesting",
+        "text-font": ["Roboto Regular"],
+        "text-max-angle": 40
+      }
+    },
+    {
+      "id": "test2_line",
+      "type": "line",
+      "source": "test2",
+      "paint": {
+        "line-width": 2,
+        "line-color": "red"
+      }
+    },
+    {
+      "id": "test2_symbol_line_center",
+      "type": "symbol",
+      "source": "test2",
+      "layout": {
+        "symbol-placement": "line-center",
+        "text-field": "testingtesting",
+        "text-font": ["Roboto Regular"],
+        "text-max-angle": 91
+      }
+    }
+  ]
+}

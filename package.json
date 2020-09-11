@@ -20,7 +20,7 @@
     "date-fns": "^1.30.1",
     "history": "^4.10.1",
     "lodash": "^4.17.20",
-    "mapbox-gl": "^1.8.1",
+    "mapbox-gl": "^1.12.0",
     "ol": "^6.4.3",
     "ol-mapbox-style": "^6.1.4",
     "preact": "^8.4.2",

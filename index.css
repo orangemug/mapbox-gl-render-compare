@@ -75,8 +75,19 @@ footer {
   margin-top: 4em;
 }
 
-.content pre {
+.style__json {
+  background: #fbfbfb;
+  border: solid 1px #eaeaea;
+  padding: 0.6em;
+  margin: 0;
+  margin-top: 0.4em;
+  overflow: auto;
+}
+
+.style__toolbox {
+  margin-top: 0.4em;
+}
+
+.style__json--hide {
   display: none;
-  /* overflow: auto; */
-  /* max-height: 100px; */
 }

@@ -16,6 +16,56 @@ import olms from 'ol-mapbox-style';
 import {Map as OlMap, View as OlView} from 'ol';
 
 
+
+class Style extends Component {
+  constructor () {
+    super();
+    this.state = {
+      showJson: false
+    }
+  }
+
+  render () {
+    const {style} = this.props;
+    const {showJson} = this.state;
+
+    return (
+      <div>
+        <h2>
+          <code>{style.path}</code>
+        </h2>
+        <p>
+          Supported: {get(style.style, "metadata.ol.supported") ? "✅ yes" : "❌ no"}
+        </p>
+        <div className="style">
+          <div
+            className="style__renderer style__renderer--ol"
+          >
+            <OpenLayersMapIframe {...style} style={style.id} />
+          </div>
+          <div
+            className="style__renderer style__renderer--mgl"
+          >
+            <Map {...style} style={style.style} />
+          </div>
+        </div>
+        <div className="style__toolbox">
+          <label>
+            <input
+              type="checkbox"
+              onChange={e => this.setState({showJson: e.target.checked})}
+            /> Show JSON
+          </label>
+        </div>
+        <pre
+          className={`style__json style__json--${showJson ? 'show' : 'hide'}`}
+        ><code>{JSON.stringify(style.style, null, 2)}</code></pre>
+      </div>
+    );
+  }
+}
+
+
 const propertiesUnsorted = {};
 Object.keys(latest).forEach(key => {
   if (key.match(/^(layout|paint)_(.*)$/)) {
@@ -266,28 +316,12 @@ class Home extends Component {
             {styles.map((style, idx) => {
               if (style.style) {
                 return (
-                  <div key={idx}>
-                    <h2>
-                      <code>{style.path}</code>
-                    </h2>
-                    <p>
-                      Supported: {get(style.style, "metadata.ol.supported") ? "✅ yes" : "❌ no"}
-                    </p>
-                    <div className="style">
-                      <div
-                        className="style__renderer style__renderer--ol"
-                      >
-                        <OpenLayersMapIframe {...style} style={style.id} />
-                      </div>
-                      <div
-                        className="style__renderer style__renderer--mgl"
-                      >
-                        <Map {...style} style={style.style} />
-                      </div>
-                    </div>
-                    <pre><code>{JSON.stringify(style.style, null, 2)}</code></pre>
-                  </div>
+                  <Style key={idx} style={style} />
                 );
+              }
+              // TODO: Temporarily ignore heatmap, fill-extrusion & hillshade
+              else if (style.path.match(/heatmap|fill-extrusion|hillshade/)) {
+                return <div/>
               }
               else {
                 return (

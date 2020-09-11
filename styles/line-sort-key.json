@@ -1,0 +1,106 @@
+{
+  "version": 8,
+  "metadata": {
+    "ol": {
+      "supported": false
+    }
+  },
+  "zoom": 1,
+  "center": [0, 0],
+  "sources": {
+    "test": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-50, 0],
+                [10, 0]
+              ]
+            },
+            "properties": {
+              "color": "red",
+              "rank": 5
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-50, 0],
+                [20, 0]
+              ]
+            },
+            "properties": {
+              "color": "blue",
+              "rank": 4
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-50, 0],
+                [30, 0]
+              ]
+            },
+            "properties": {
+              "color": "green",
+              "rank": 3
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-50, 0],
+                [40, 0]
+              ]
+            },
+            "properties": {
+              "color": "yellow",
+              "rank": 2
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [-50, 0],
+                [50, 0]
+              ]
+            },
+            "properties": {
+              "color": "pink",
+              "rank": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "subject",
+      "type": "line",
+      "source": "test",
+      "layout": {
+        "line-sort-key": ["get", "rank"]
+      },
+      "paint": {
+        "line-width": 15,
+        "line-color": ["get", "color"]
+      }
+    }
+  ]
+}

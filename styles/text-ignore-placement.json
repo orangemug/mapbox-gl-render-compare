@@ -1,0 +1,167 @@
+{
+  "version": 8,
+  "metadata": {
+    "ol": {
+      "supported": false
+    }
+  },
+  "sources": {
+    "test1-off": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-14, 10]
+            }
+          }
+        ]
+      }
+    },
+    "test2-off": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, 10]
+            }
+          }
+        ]
+      }
+    },
+    "test3-off": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [14, 10]
+            }
+          }
+        ]
+      }
+    },
+    "test1": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-14, -10]
+            }
+          }
+        ]
+      }
+    },
+    "test2": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, -10]
+            }
+          }
+        ]
+      }
+    },
+    "test3": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [14, -10]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1-off",
+      "type": "symbol",
+      "source": "test1-off",
+      "layout": {
+        "icon-image": "airport_11",
+        "text-font": ["Roboto Regular"],
+        "text-field": "testing"
+      }
+    },
+    {
+      "id": "test2-off",
+      "type": "symbol",
+      "source": "test2-off",
+      "layout": {
+        "icon-image": "america_football_15",
+        "text-font": ["Roboto Regular"],
+        "text-field": "testing"
+      }
+    },
+    {
+      "id": "test3-off",
+      "type": "symbol",
+      "source": "test3-off",
+      "layout": {
+        "icon-image": "amusement_park_11",
+        "text-font": ["Roboto Regular"],
+        "text-field": "testing"
+      }
+    },
+    {
+      "id": "test1",
+      "type": "symbol",
+      "source": "test1",
+      "layout": {
+        "icon-image": "airport_11",
+        "text-font": ["Roboto Regular"],
+        "text-field": "testing",
+        "text-ignore-placement": true
+      }
+    },
+    {
+      "id": "test2",
+      "type": "symbol",
+      "source": "test2",
+      "layout": {
+        "icon-image": "america_football_15",
+        "text-font": ["Roboto Regular"],
+        "text-field": "testing",
+        "text-ignore-placement": true
+      }
+    },
+    {
+      "id": "test3",
+      "type": "symbol",
+      "source": "test3",
+      "layout": {
+        "icon-image": "amusement_park_11",
+        "text-font": ["Roboto Regular"],
+        "text-field": "testing",
+        "text-ignore-placement": true
+      }
+    }
+  ]
+}

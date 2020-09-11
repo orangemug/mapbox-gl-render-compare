@@ -1,0 +1,256 @@
+{
+  "version": 8,
+  "metadata": {
+    "ol": {
+      "supported": false
+    }
+  },
+  "sources": {
+    "center": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, 0]
+            }
+          }
+        ]
+      }
+    },
+    "left": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-10, 0]
+            }
+          }
+        ]
+      }
+    },
+    "right": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [10, 0]
+            }
+          }
+        ]
+      }
+    },
+    "top": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, 15]
+            }
+          }
+        ]
+      }
+    },
+    "bottom": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, -15]
+            }
+          }
+        ]
+      }
+    },
+    "top-left": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-10, 15]
+            }
+          }
+        ]
+      }
+    },
+    "top-right": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [10, 15]
+            }
+          }
+        ]
+      }
+    },
+    "bottom-left": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-10, -15]
+            }
+          }
+        ]
+      }
+    },
+    "bottom-right": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [10, -15]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test-top-left",
+      "type": "symbol",
+      "source": "top-left",
+      "layout": {
+        "text-field": "top-left",
+        "text-justify": "auto",
+        "text-font": ["Roboto Regular"],
+        "text-variable-anchor": ["top", "top-right"]
+      }
+    },
+    {
+      "id": "test-top-right",
+      "type": "symbol",
+      "source": "top-right",
+      "layout": {
+        "text-field": "top-right",
+        "text-justify": "auto",
+        "text-font": ["Roboto Regular"],
+        "text-variable-anchor": ["top", "top-left"]
+      }
+    },
+    {
+      "id": "test-top",
+      "type": "symbol",
+      "source": "top",
+      "layout": {
+        "text-field": "top",
+        "text-justify": "auto",
+        "text-font": ["Roboto Regular"],
+        "text-variable-anchor": ["top"]
+      }
+    },
+    {
+      "id": "test-left",
+      "type": "symbol",
+      "source": "left",
+      "layout": {
+        "text-field": "left",
+        "text-justify": "auto",
+        "text-font": ["Roboto Regular"],
+        "text-variable-anchor": ["center", "right"]
+      }
+    },
+    {
+      "id": "left-circle",
+      "type": "circle",
+      "source": "left",
+      "paint": {
+        "circle-radius": 1
+      }
+    },
+    {
+      "id": "test-right",
+      "type": "symbol",
+      "source": "right",
+      "layout": {
+        "text-field": "right",
+        "text-justify": "auto",
+        "text-font": ["Roboto Regular"],
+        "text-variable-anchor": ["center", "left"]
+      }
+    },
+    {
+      "id": "test-center",
+      "type": "symbol",
+      "source": "center",
+      "layout": {
+        "text-field": "center",
+        "text-justify": "auto",
+        "text-font": ["Roboto Regular"],
+        "text-variable-anchor": ["center"]
+      }
+    },
+    {
+      "id": "test-bottom-left",
+      "type": "symbol",
+      "source": "bottom-left",
+      "layout": {
+        "text-field": "bottom-left",
+        "text-justify": "auto",
+        "text-font": ["Roboto Regular"],
+        "text-variable-anchor": ["bottom", "bottom-right"]
+      }
+    },
+    {
+      "id": "test-bottom-right",
+      "type": "symbol",
+      "source": "bottom-right",
+      "layout": {
+        "text-field": "bottom-right",
+        "text-justify": "auto",
+        "text-font": ["Roboto Regular"],
+        "text-variable-anchor": ["bottom", "bottom-left"]
+      }
+    },
+    {
+      "id": "test-bottom",
+      "type": "symbol",
+      "source": "bottom",
+      "layout": {
+        "text-field": "bottom",
+        "text-justify": "auto",
+        "text-font": ["Roboto Regular"],
+        "text-variable-anchor": ["bottom"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "version": 8,
+  "metadata": {
+    "ol": {
+      "supported": false
+    }
+  },
+  "sources": {
+    "test": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, 2]
+            },
+            "properties": {
+              "rank": 3
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, 0]
+            },
+            "properties": {
+              "rank": 2
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [0, -2]
+            },
+            "properties": {
+              "rank": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test1",
+      "type": "symbol",
+      "source": "test",
+      "layout": {
+        "icon-image": "america_football_15",
+        "icon-allow-overlap": true,
+        "symbol-z-order": "source",
+        "symbol-sort-key": ["get", "rank"]
+      }
+    }
+  ]
+}

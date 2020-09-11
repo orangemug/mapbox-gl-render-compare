@@ -1,0 +1,101 @@
+{
+  "version": 8,
+  "metadata": {
+    "ol": {
+      "supported": false
+    }
+  },
+  "sources": {
+    "test": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    -20,
+                    0
+                  ],
+                  [
+                    20,
+                    0
+                  ],
+                  [
+                    20,
+                    40
+                  ],
+                  [
+                    -20,
+                    40
+                  ],
+                  [
+                    -20,
+                    0
+                  ]
+                ]
+              ]
+            },
+            "properties": {
+              "color": "blue",
+              "rank": 2
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    -20,
+                    -20
+                  ],
+                  [
+                    20,
+                    -20
+                  ],
+                  [
+                    20,
+                    20
+                  ],
+                  [
+                    -20,
+                    20
+                  ],
+                  [
+                    -20,
+                    -20
+                  ]
+                ]
+              ]
+            },
+            "properties": {
+              "color": "red",
+              "rank": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "test",
+      "type": "fill",
+      "source": "test",
+      "layout": {
+        "fill-sort-key": ["get", "rank"]
+      },
+      "paint": {
+        "fill-color": ["get", "color"]
+      }
+    }
+  ]
+}
